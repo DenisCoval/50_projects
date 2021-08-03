@@ -9,19 +9,21 @@ body {
     align-items: flex-start;
     justify-content: center;
     margin: 0;
-    background-color: #efedd6;
+    background-color: #90ddca;
     overflow-x: hidden; /*horizontal scrollBar*/
 }
 .container {
     text-align: center;
 }
 .container h1 {
-    margin: 20px;
+    margin: 30px;
     font-size: 24px;
+    color: #fff;
+    font-weight: 600;
 }
 .box {
-    background-color: #0070af;
-    color: #fff;
+    /* background-color: #fff; */
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,12 +34,14 @@ body {
     border-radius: 10px;
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3);
     font-size: 35px;
-    font-weight: 700;
-    transform: translateX(600px);
-    transition: transform 0.4s ease;
+    font-weight: 400;
+    transform: translateX(900px);
+    transition: transform 0.9s cubic-bezier(1, 0.18, 0.3, 1.19);
 }
 .box:nth-of-type(even) {
-    transform: translateX(-600px);
+    color: #fff;
+    background-color: #000;
+    transform: translateX(-900px);
 }
 .box.show {
     transform: translateX(0px);
